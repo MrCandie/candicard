@@ -1,0 +1,238 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.section-1 {
+  position: relative;
+  width: 500px;
+  max-width: 50%;
+  height: 90vh;
+  /* margin: 0 auto; */
+  background-color: rgb(184, 184, 241);
+}
+.section-1 h1 {
+  font-size: 2rem;
+  background-color: greenyellow;
+  width: 200px;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+  color: #666;
+  box-shadow: 0 0.1rem 0.3rem#000;
+  z-index: 100;
+  margin-left: 1rem;
+}
+.section-1 h2 {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.section-2 {
+  width: 80%;
+  height: 75%;
+  margin: 1rem auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-2 #displayImage {
+  width: 10rem;
+  height: 8rem;
+  margin: 1rem auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.section-2 #displayLogo {
+  width: 6rem;
+  height: 5rem;
+  /* margin-top: -4.5rem; */
+  /* margin-bottom: 2rem; */
+  margin-left: 0.5rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.section-2 .part1 {
+  flex-basis: 100%;
+  border-right: 1px solid gray;
+}
+.section-2 .part1 p {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(188, 188, 250);
+  width: 80%;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+.section-2 .part1 p:nth-child(4) {
+  background-color: rgb(151, 248, 151);
+}
+.section-2 .part1 p:nth-child(6) {
+  background-color: rgb(255, 188, 164);
+}
+.section-2 .part1 p:nth-child(8) {
+  background-color: rgb(255, 226, 151);
+}
+.section-2 .part1 p:nth-child(10) {
+  background-color: rgb(255, 218, 224);
+}
+.section-2 .part1 p span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.part2 {
+  width: 500px;
+  max-width: 50%;
+  height: 90vh;
+  margin-left: 3rem;
+  background-color: rgb(223, 223, 253);
+  border-radius: 1rem;
+}
+.part2 h1 {
+  margin-bottom: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 43);
+}
+.part2 form {
+  margin-top: -2.5rem;
+}
+.part2 label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 1rem 0.5rem 2rem;
+}
+.part2 label input {
+  display: block;
+  width: 50%;
+  border: 1px solid gray;
+  outline: none;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+  margin: 0.5rem auto 0;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+.part2 label input::placeholder {
+  padding: 1rem;
+  color: #ccc;
+}
+hr {
+  width: 80%;
+  border: none;
+  background-color: #ccc;
+  height: 1px;
+}
+.part2 form button {
+  padding: 1rem 0.5rem;
+  color: #fff;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  width: 100px;
+  margin: 1rem;
+}
+#upload {
+  transition: all 0.5s;
+}
+#download {
+  background-color: rgb(16, 101, 16);
+  transition: all 0.5s;
+}
+#download:hover,
+#download:focus {
+  background-color: greenyellow;
+  color: #000;
+}
+#upload:hover,
+#upload:focus {
+  background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+  .section-1 {
+    margin: 1rem auto;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    max-width: 90%;
+    overflow: hidden;
+  }
+  .section-1 h1 {
+    font-size: 1rem;
+    width: 100px;
+  }
+  .section-1 h2 {
+    font-size: 0.8rem;
+  }
+  .section-1 .part1 p {
+    font-size: 0.8rem;
+  }
+  .section-1 .part1 p span {
+    font-size: 0.7rem;
+  }
+  .section-2 {
+    width: 90%;
+  }
+  .section-2 #displayImage {
+    width: 8rem;
+    height: 7rem;
+    margin: 1rem auto;
+  }
+  .section-2 #displayLogo {
+    width: 6rem;
+    height: 5rem;
+  }
+  .part2 {
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+  }
+  .part2 h1 {
+    font-size: 1.2rem;
+  }
+  .part2 label {
+    font-size: 0.4rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+  .part2 label input {
+    padding: 0.6rem 0;
+    font-size: 0.5rem;
+    width: 80%;
+  }
+  .part2 form button {
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .part2 label input::placeholder {
+    font-size: 0.5rem;
+  }
+}

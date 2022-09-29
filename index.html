@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CANDICARD</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section id="section-1" class="section-1">
+      <h1>CANDICARD</h1>
+      <h2>Generate an ID card for your business with one click</h2>
+      <div class="section-2" id="section-2">
+        <div class="part1">
+          <div id="displayLogo"></div>
+          <div id="displayImage"></div>
+          <p>Full Name <span class="fullname"></span></p>
+       <hr>
+          <p>Profession <span class="profession"></span></p>
+       <hr>
+          <p>Skills <span class="skill"></span></p>
+       <hr>
+          <p>Age <span class="age"></span></p>
+       <hr>
+          <p>ID No. <span class="id"></span></p>
+       <hr>
+        </div>
+
+        
+        </div>
+      </div>
+    </section>
+      <div class="part2">
+        <h1>Upload Your Credentials</h1>
+        <form>
+          <label for="file"
+            >Select an image file
+            <input
+              required
+              type="file"
+              name="file"
+              id="file"
+              accept="image/jpeg, image/png, image/jpg"
+            />
+          </label>
+          <label for="file"
+            >Upload your logo
+            <input
+              required
+              type="file"
+              name="logo"
+              id="logo"
+              accept="image/jpeg, image/png, image/jpg"
+            />
+          </label>
+          <label for="fullName"
+            >FullName
+            <input
+              required
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="john doe"
+            />
+          </label>
+          <label for="profession"
+            >Profession
+            <input
+              type="text"
+              name="profession"
+              id="profession"
+              placeholder="software engineer"
+              required
+            />
+          </label>
+          <label for="skill"
+            >skills
+            <input
+              type="text"
+              name="skill"
+              id="skill"
+              placeholder="html, css, js"
+              maxlength="25"
+            />
+          </label>
+          <label for="age"
+            >age
+            <input type="number" name="age" id="age" maxlength="2" required />
+          </label>
+          <label for="id"
+            >ID No
+            <input type="number" name="id" id="id" required />
+          </label>
+          <button id="upload">Upload</button>
+          <a href="#" download="MyIdCard.png" id="download-link"></a>
+          <button id="download">Download</button>
+        </form>
+    
+  </body>
+</html>
